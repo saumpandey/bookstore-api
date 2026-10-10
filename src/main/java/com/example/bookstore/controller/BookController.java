@@ -28,8 +28,6 @@ public class BookController {
     public BookController(BookService service) {
         this.service = service;
     }
-    
-    int a = 12;
 
     @GetMapping
     public List<Book> list(@RequestParam(required = false) String author) {
