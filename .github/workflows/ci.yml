@@ -21,6 +21,8 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: maven
+        env:
+          name: saum
 
       # Run the unit tests for the application.
       - name: Unit tests
